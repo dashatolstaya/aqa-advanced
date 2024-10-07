@@ -1,0 +1,23 @@
+{
+  "name": "lesson11",
+  "version": "1.0.0",
+  "description": "set the prettier in this project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prettier": "prettier ./src --check",
+    "prettier:fix": "prettier ./src --write",
+    "prepare": "husky",
+    "test": "node nodeBasics"
+  },
+  "author": "Daria",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,md}": "prettier --write"
+  }
+}
