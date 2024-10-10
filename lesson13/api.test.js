@@ -33,14 +33,14 @@ describe('Verifying JSONPlaceholder API', () => {
 
     test('POST /posts should create a new post', async () => {
         const response = await api.post('/posts', {
-            title: 'foo',
-            body: 'bar',
+            title: 'First post',
+            body: 'It is my first post about this book',
             userId: 1
         });
         expect(response.status).toBe(201);
         expect(response.data).toHaveProperty('id');
-        expect(response.data.title).toBe('foo');
-        expect(response.data.body).toBe('bar');
+        expect(response.data.title).toBe('First post');
+        expect(response.data.body).toBe('It is my first post about this book');
         expect(response.data.userId).toBe(1);
     });
 
