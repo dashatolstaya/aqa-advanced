@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Figure out with chalk library",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dashatolstaya/aqa-advanced.git"
